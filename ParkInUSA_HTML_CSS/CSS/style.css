@@ -1,0 +1,160 @@
+/* https://codepen.io/peternguyen/pen/hICga/*/
+
+body {
+    font-family:  Helvetica, verdana, sans-serif;
+    color: #1B2631;
+    max-width: 1200px;
+}
+p::first-letter {
+  font-size: 120%;
+}
+label {
+  display: block;
+  background-color: #f8981C;
+  padding: 0.5em;
+  text-align: left;
+  border-bottom: 1px solid #CCC;
+  color: white;
+  font-size: 48px;
+  position:relative;
+  left: 0px;
+}
+label:hover {
+  color: #000;
+}
+label::before {
+  font-family: Consolas, monaco, monospace;
+  font-weight: bold;
+  font-size: 15px;
+  content: "+";
+  vertical-align: text-top;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 3px;
+  background: radial-gradient(ellipse at center, #CCC 50%, transparent 50%);
+}
+section {
+  padding: 0 20px;
+}
+
+.contact p{
+  font-family:  Arial, verdana, sans-serif;
+  font-size: 90%;
+}
+
+.header img {
+  float: left;
+  width: 5%;
+  background: #555;
+  align: center;
+}
+
+.header h1 {
+  background-color: #f8981C;
+  color: white;
+  font-size: 48px;
+  position:relative;
+  left: 70px;
+}
+
+.screenshot {
+    max-width: 460px;
+    margin: 0px 10px 0px 0px;
+}
+.app {
+    display: flex;
+    align-self: baseline;
+}
+
+#expandGSM {
+  height: 0px;
+  overflow: hidden;
+  transition: height 0.5s;
+  color: #000;
+}
+
+#toggleGSM:checked ~ #expandGSM {
+  height: 550px;
+}
+
+#toggleGSM:checked ~ label::before {
+  content: "-";
+}
+
+#expandMACA {
+  height: 0px;
+  overflow: hidden;
+  transition: height 0.5s;
+  color: #000;
+}
+
+#toggleMACA:checked ~ #expandMACA {
+  height: 550px;
+}
+
+#expandACAD {
+  height: 0px;
+  overflow: hidden;
+  transition: height 0.5s;
+  color: #000;
+}
+
+#toggleACAD:checked ~ #expandACAD {
+  height: 450px;
+}
+
+
+#expandALL {
+  height: 0px;
+  overflow: hidden;
+  transition: height 0.5s;
+  color: #000;
+}
+
+#toggleALL:checked ~ #expandALL {
+  height: 550px;
+}
+
+#expandSTR {
+  height: 0px;
+  overflow: hidden;
+  transition: height 0.5s;
+  color: #000;
+}
+
+#toggleSTR:checked ~ #expandSTR {
+  height: 550px;
+}
+/*
+.title {
+    background-color: #33BEBE;
+    color: white;
+    text-align: center;
+    padding: 20px 0 0 10px;
+}
+
+
+
+.description {
+    color: #1B2631;
+    font-size: 18px
+}
+
+
+.img_icon{
+  max-width:75px;
+  max-height:57px;
+  padding: 20px 0 0 10px;
+}
+
+#content {
+	max-width: 1024px;
+  height 100%
+	margin: 0 auto;
+	background-color: cyan;
+}
+
+
+
+*/
