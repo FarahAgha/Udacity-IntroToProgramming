@@ -8,11 +8,15 @@ body {
 p::first-letter {
   font-size: 120%;
 }
+input {
+    display: none;
+    visibility: hidden;
+}
 label {
   display: block;
   background-color: #f8981C;
   padding: 0.5em;
-  text-align: left;
+  text-align: center;
   border-bottom: 1px solid #CCC;
   color: white;
   font-size: 48px;
@@ -92,6 +96,9 @@ section {
 #toggleMACA:checked ~ #expandMACA {
   height: 550px;
 }
+#toggleMAMC:checked ~ label::before {
+  content: "-";
+}
 
 #expandACAD {
   height: 0px;
@@ -103,6 +110,9 @@ section {
 #toggleACAD:checked ~ #expandACAD {
   height: 450px;
 }
+#toggleACAD:checked ~ label::before {
+  content: "-";
+}
 
 
 #expandALL {
@@ -111,9 +121,11 @@ section {
   transition: height 0.5s;
   color: #000;
 }
-
 #toggleALL:checked ~ #expandALL {
   height: 550px;
+}
+#toggleALL:checked ~ label::before {
+  content: "-";
 }
 
 #expandSTR {
@@ -125,6 +137,9 @@ section {
 
 #toggleSTR:checked ~ #expandSTR {
   height: 550px;
+}
+#toggleSTR:checked ~ label::before {
+  content: "-";
 }
 /*
 .title {
