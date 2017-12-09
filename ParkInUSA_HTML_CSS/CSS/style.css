@@ -1,5 +1,5 @@
 /* https://codepen.io/peternguyen/pen/hICga/*/
-
+/*  */
 body {
     font-family:  Helvetica, verdana, sans-serif;
     color: #1B2631;
@@ -11,11 +11,11 @@ body {
 p::first-letter {
   font-size: 120%;
 }
-/*  */
+/*
 section {
-  padding-left: : 0 20px;
+  padding : 20px;
 }
-/*  */
+*/
 input {
     display: none;
     visibility: hidden;
@@ -50,14 +50,13 @@ label::before {
 .contact p{
   font-family:  Arial, verdana, sans-serif;
   font-size: 90%;
-  text-indent: 20px;
+  text-indent: 30px;
 }
 /*  */
 .header img {
   float: left;
   width: 5%;
   background: white;
-  align: center;
   padding-right: 30px;
   padding-bottom: 10px;
 
@@ -81,18 +80,28 @@ h2 {
   text-indent: 20px;
   position:relative;
 }
+h3 {
+  background-color: #bfff00;
+  color: #253300;
+  text-indent: 20px;
+  position:relative;
+  padding: 0.4em;
+}
+h4{
+    border-bottom: 1px solid #CCC;
+}
 /*  */
 .screenshot {
     max-width: 460px;
+    max-height: 560px;
     margin: 0px 10px 0px 0px;
+    padding-left: 50px;
 }
 /*  */
 .app {
     display: flex;
     align-self: baseline;
 }
-
-
 
 /*  */
 #expandGSM {
@@ -101,12 +110,11 @@ h2 {
   transition: height 0.5s;
   color: #000;
 }
-
 #toggleGSM:checked ~ #expandGSM {
   height: 550px;
 }
-#toggleGSM:checked ~ label::before {
-  content: "-";
+#toggleGSM:checked ~ label#GSM::before {
+    content: "-";
 }
 
 /*  */
@@ -116,11 +124,10 @@ h2 {
   transition: height 0.5s;
   color: #000;
 }
-
 #toggleMACA:checked ~ #expandMACA {
   height: 550px;
 }
-#toggleMACA:checked ~ label::before {
+#toggleMACA:checked ~ label#MACA::before {
   content: "-";
 }
 /*  */
@@ -130,11 +137,10 @@ h2 {
   transition: height 0.5s;
   color: #000;
 }
-
 #toggleACAD:checked ~ #expandACAD {
   height: 450px;
 }
-#toggleACAD:checked ~ label::before {
+#toggleACAD:checked ~ label#ACAD::before {
   content: "-";
 }
 /*  */
@@ -145,9 +151,9 @@ h2 {
   color: #000;
 }
 #toggleALL:checked ~ #expandALL {
-  height: 550px;
+  height: 500px;
 }
-#toggleALL:checked ~ label::before {
+#toggleALL:checked ~ label#ALL::before {
   content: "-";
 }
 /*  */
@@ -157,10 +163,9 @@ h2 {
   transition: height 0.5s;
   color: #000;
 }
-
 #toggleSTR:checked ~ #expandSTR {
   height: 550px;
 }
-#toggleSTR:checked ~ label::before {
+#toggleSTR:checked ~ label#STR::before {
   content: "-";
 }
