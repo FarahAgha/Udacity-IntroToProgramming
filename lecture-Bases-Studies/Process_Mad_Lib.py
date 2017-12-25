@@ -4,9 +4,10 @@
 # replaced with a random verb. You're free to change what the random functions
 # return as verbs or nouns for your own fun, but for submissions keep the code the way it is!
 
-from random import randint
+import random as rand
 
 def random_verb():
+    
     random_num = randint(0, 1)
     if random_num == 0:
         return "run"
@@ -14,7 +15,7 @@ def random_verb():
         return "kayak"
 
 def random_noun():
-    random_num = randint(0,1)
+    random_num = rand.randint(0,1)
     if random_num == 0:
         return "sofa"
     else:
