@@ -1,0 +1,25 @@
+Twinkle twinkle __1__ star
+how I __2__? What you are?
+Up above the __3__ so high
+like a __4__ in the sky
+[little, wonder, world, diamond]
+
+Five little __1__ jumping on the bed
+One __3__ off and bumped his __4__
+Mama called the __2__
+And the __2__ said
+No more __1__ jumping on the bed
+[monkeys, doctor, fell, bumped]
+
+Freedom __1__ standing on a mountain
+In a foreign __2__
+Trying to send a __3__
+To his people, back in the __4__
+He had a __5__ one time
+
+[fighter, country, message, ghetto, home]
+Lets Play the Game.
+Choose the difficulty level.
+def diff_level():
+    level_chosen = raw_input
+    if level_chosen == 1:
