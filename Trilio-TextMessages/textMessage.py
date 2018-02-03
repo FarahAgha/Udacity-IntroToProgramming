@@ -3,16 +3,16 @@
 from twilio.rest import TwilioRestClient
 
 # Your Account SID from twilio.com/console
-account_sid = "ACaa6bc6f9092a843c7c156d72aac33f73"
+account_sid = "ACaa6bc6f909*****"
 # Your Auth Token from twilio.com/console
-auth_token  = "ce9bfabc63eed5dceed0bf6d2fc680a2"
+auth_token  = "ce9bfabc6*****"
 
 client = TwilioRestClient(account_sid, auth_token)
 
 message = client.messages.create(
 
-    to="+1 312-532-7290",
-    from_="+1 312-313-6417",
+    to="+1 404-404-4040",
+    from_="+1 404-404-4040",
     body="Hello from the other side!")
 
 print(message.sid)
