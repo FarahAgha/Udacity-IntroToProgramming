@@ -1,6 +1,7 @@
 import media
 import fresh_tomatoes
 
+# title, art_imagery, trailer, story_line, director, writers, release_date, duration, genres  
 the_female_brain = media.Movie("The Female Brain",
                 "http://t3.gstatic.com/images?q=tbn:ANd9GcSfUl9c60Gz-lgPK9fwA6mvFFwxa6l_nZCCjDat1pB7934m8Vt2",
                 "https://www.youtube.com/watch?v=BxYsQFPvPns",
@@ -58,13 +59,6 @@ big_sick = media.Movie("The Big Sick",
                 "14 July 2017 ",
                 "2h 21min",
                 "Comedy | Drama | Romance")
-
-# ant_man_and_the_wasp.print_movie_info()
-# gringo.print_movie_info()
-# the_female_brain.print_movie_info()
-# thor_ragnarok.print_movie_info()
-# kingsman_golden_circle.print_movie_info()
-# big_sick.print_movie_info()
 
 movies = [the_female_brain, gringo, ant_man_and_the_wasp, thor_ragnarok, kingsman_golden_circle, big_sick]
 fresh_tomatoes.open_movies_page(movies)
