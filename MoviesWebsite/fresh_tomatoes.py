@@ -32,6 +32,10 @@ main_page_head = '''
             width: 100%;
             height: 100%;
         }
+        .movie-image {
+            margin-bottom: 20px;
+            padding-top: 20px;
+        }
         .movie-tile {
             margin-bottom: 20px;
             padding-top: 20px;
@@ -40,6 +44,7 @@ main_page_head = '''
             background-color: #EEE;
             cursor: pointer;
         }
+            
         .scale-media {
             padding-bottom: 56.25%;
             position: relative;
